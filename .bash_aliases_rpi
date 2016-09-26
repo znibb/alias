@@ -1,0 +1,2 @@
+# RPi-specific aliases
+alias temp='~/scripts/showcoretemp.sh'
