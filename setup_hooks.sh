@@ -13,3 +13,6 @@ echo "Writing hook invoking: "$INVOCATION
 echo "#!/bin/bash" > .git/hooks/post-merge
 echo >> .git/hooks/post-merge
 echo $INVOCATION >> .git/hooks/post-merge
+
+# Make hook script executable
+chmod +x .git/hooks/post-merge
