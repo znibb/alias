@@ -1,1 +1,1 @@
-
+make copytohome.sh run automatically on git merge
