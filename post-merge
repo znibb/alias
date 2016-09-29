@@ -1,0 +1,6 @@
+#!/bin/bash
+
+$GIT_DIR/.././copytohome.sh
+echo "pwd is $PWD"
+echo "Ran copytohome.sh"
+
