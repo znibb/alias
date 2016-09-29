@@ -1,2 +1,1 @@
-Remove while loop from copytohome.sh
-Make copytohome.sh not copy showtemp.sh if RPi isn't to be included
+
