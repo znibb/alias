@@ -1,6 +1,0 @@
-#!/bin/bash
-
-./copytohome.sh
-echo "pwd is $PWD"
-echo "Ran copytohome.sh"
-
