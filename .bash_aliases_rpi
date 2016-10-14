@@ -1,5 +1,5 @@
 alias temp='~/scripts/showcoretemp.sh'
 alias tmuxn='tmux new-session -t'
 alias tmuxa='tmux attach-session -t'
-alias tmuxk='tmux kill-session -t'
+alias tmuxk='tmux kill-session -s'
 alias tmuxl='tmux list-sessions'
