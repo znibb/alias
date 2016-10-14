@@ -44,7 +44,7 @@ cp .bash_aliases_base .bash_aliases
 # Check for additional aliases to include
 if [ "$RPI" = true ]; then
   verboseOutput "Including RPi aliases"
-  echo $(cat .bash_aliases_rpi) >> .bash_aliases
+  cat .bash_aliases_rpi >> .bash_aliases
 fi
 
 # Move assembled aliases file to home dir
