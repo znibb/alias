@@ -1,5 +1,6 @@
 #!/bin/bash
 
+##### Hooks #####
 VALID_FLAGS="(-rpi)"
 
 # Read user input and build invocation
@@ -16,3 +17,11 @@ echo $INVOCATION >> .git/hooks/post-merge
 
 # Make hook script executable
 chmod +x .git/hooks/post-merge
+
+##### Cronjob #####
+# Get path to repo and create/update cron job doing git pull
+REPO_PATH=$(cd "$(dirname "$0")" && pwd)
+GIT_PATH=$(which git)
+command="cd $REPO_PATH && $GIT_PATH pull origin master"
+job="0 0,12 * * * $command" # Run at 00:00 and 12:00
+cat <(fgrep -i -v "$command" <(crontab -l)) <(echo "$job") | crontab -
